@@ -1,0 +1,5 @@
+Utilizar el compilado gcc:
+    ProgramC> gcc program.c -o name
+
+Ejecutar el .exe:
+    .\program.exe

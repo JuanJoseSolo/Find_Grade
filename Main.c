@@ -1,14 +1,17 @@
-//-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-// INICIO DE CURSO CON C
+////////////////////////////////////////////////////////////////////////////////////
+// REPASO C
 // Fecha: 01/marzo/2022 
 // Tema: Tipo de datos y primeros pasos con el compilador gcc.
-//-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+///////////////////////////////////////////////////////////////////////////////////
 
+
+///////////////////////////////////////////////////////////////////////////////////
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h> //concer los rangos de valores para los datos primitivos.
 #include <float.h> // conocer los rangos de valores para los puntos flotantes.
+#include "grados.c"  
 #define bitsOnchar CHAR_BIT //variable declarada en: limits.h 
 
 
@@ -17,7 +20,6 @@ enum colors
 {
     red, green, blue
 }colores;
-
 int main()
 {
 
@@ -65,13 +67,10 @@ int main()
     color = blue;
     printf("\nThe variable type enum have as blue idex : %d ", color);
 
-    
+//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
+float data =  Convertir(45);
+printf("%10.3d C = ", data);
 
-
-    
-
-
-
-
+return 0;
 }
